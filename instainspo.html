@@ -1,0 +1,92 @@
+
+<html>
+<head>
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-database.js"></script>
+
+  <script src="databasei.js"></script>
+
+</head>
+<header>
+<center><h1> <br>  </br> INSTA-INSPO <h1></center>
+<center><h2> FOOD. WORKOUT. SKIN CARE <br> </br>  <h2></center>
+</header>
+
+<h3>
+<a href = "livnyc.html"> <button> HOME</button>
+<a href = "instainspo.html"> <button> INSTA-INSPO </button></a>
+<a href="venting.html"> <button> VENTING </button> </a>
+<a href="lifestyle.html"> <button> LIFESTYLE </button> </a>
+
+</h3>
+<style>
+header {
+  background-color: white;
+  line-height: 35px;
+}
+button {
+  background-color: #FFF5EE
+  color: #FFF5EE ;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size:17px;
+  width: 25%;
+}
+button.onclick  {
+  background-color: #FFF5EE;
+
+
+}
+#getCenter {
+  margin-left: 500px;
+}
+</style>
+<body background = "https://i0.wp.com/thelittleblushbook.com/wp-content/uploads/2017/12/283037-download-free-marble-background-2048x1347-xiaomi.jpg">
+
+<div>
+
+<br> </br>
+  <p> <button onclick= "test()" id = "getCenter"> Show previous comments </button></p>
+  <br> </br>
+  <p id = "print">
+  </p>
+
+
+
+  	<p>Enter name and comment</p>
+
+  	<div id="pref-form">
+  		<input style="display:inline;width:auto;" type="text" id="name-box" name="name" placeholder="Name"/> <br> </br>
+
+  		<input style="display:inline;width:500px; height:400px; border: solid 1px #666;" type="text" id="comment-box" name="comment" placeholder="Comment"/></center>
+
+  		<br/><br/>
+
+  		<button id="submit" name="submit" onclick="changePrefs();clearButton();" >Submit</button>
+    <p id = "print">
+    </p>
+
+  	</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
