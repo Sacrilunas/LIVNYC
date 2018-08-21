@@ -16,7 +16,6 @@
    var name = document.getElementById('name-box');
  	var comment = document.getElementById('comment-box');
    showAll();
-   alert("worked");
  }
 
  // Handles the submit button being clicked based on user id
@@ -49,7 +48,7 @@
      for (var key in my_pref) {
        var comment_name_pair = my_pref[key];
        // alert(comment_color_pair.name + " " + comment_color_pair.comment);
-       my_html += "<br></br> Your name: " + comment_name_pair.name + "<br> Your comment: " + comment_name_pair.comment;
+       my_html += "<br></br><br></br> " + comment_name_pair.name + " says: <br></br>" + comment_name_pair.comment;
 
 
        }

@@ -37,7 +37,7 @@ function authStatusListener() {
    if (user) {
      document.getElementById('log-in-form').innerHTML='';
      document.getElementById('message-box').innerHTML = "You're signed in!";
-     location.href = "livnyc.html";
+     location.href = "instainspo.html";
    } else {
      // No user is signed in.
    }
@@ -48,6 +48,8 @@ function authStatusListener() {
 function init() {
  authStatusListener();
 }
+
+
 
 // tells the browser to call init when the page first loads
 window.onload = init();

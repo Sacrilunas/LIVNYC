@@ -7,7 +7,9 @@
 
   <script src="databaseL.js"></script>
 
+
 </head>
+
 <header>
 <center><h1> <br>  </br> LIFESTYLE <h1></center>
 <center><h2> FOOD. WORKOUT. SKIN CARE <br> </br>  <h2></center>
@@ -15,11 +17,12 @@
 
 <h3>
 <a href = "livnyc.html"> <button> HOME</button>
-<a href = "instainspo.html"> <button> INSTA-INSPO </button></a>
-<a href="venting.html"> <button> VENTING </button> </a>
-<a href="lifestyle.html"> <button> LIFESTYLE </button> </a>
-
+<a href = "logini.html"> <button> INSTA-INSPO </button></a>
+<a href="loginV.html"> <button> VENTING </button> </a>
+<a href="loginL.html"> <button> LIFESTYLE </button> </a>
 </h3>
+
+
 <style>
 header {
   background-color: white;
@@ -33,21 +36,40 @@ button {
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size:17px;
+  font-size: 17px;
+  width: 25%;
+
+}
+
+input {
+  background-color: grey;
+  color: grey ;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
   width: 25%;
 }
-button.onclick  {
-  background-color: #FFF5EE;
-
-
+button:hover {
+  background-color: #f9b3ab;
 }
 #getCenter {
-  margin-left: 500px;
+  margin-left: 300px;
 }
+#margin{
+  margin-left: 260px;
+  margin-right: 260px;
+}
+#print {
+  font-size: 17px;
+}
+
 </style>
 <body background = "https://i0.wp.com/thelittleblushbook.com/wp-content/uploads/2017/12/283037-download-free-marble-background-2048x1347-xiaomi.jpg">
 
-<div>
+<div id = "margin">
 
 <br> </br>
   <p> <button onclick= "test()" id = "getCenter"> Show previous comments </button></p>
@@ -56,13 +78,14 @@ button.onclick  {
   </p>
 
 
+  <br> </br>
 
   	<p>Enter name and comment</p>
 
   	<div id="pref-form">
-  		<input style="display:inline;width:auto;" type="text" id="name-box" name="name" placeholder="Name"/> <br> </br>
+  		<textarea style="display:inline;width:300px;" type="text" id="name-box" name="name" placeholder="Name"></textarea> <br> </br>
 
-  		<input style="display:inline;width:500px; height:400px; border: solid 1px #666;" type="text" id="comment-box" name="comment" placeholder="Comment"/></center>
+  		<textarea style="display:inline;width:730px; height:400px; border: solid 1px #666;" type="text" id="comment-box" name="comment" placeholder="Comment"></textarea>
 
   		<br/><br/>
 
@@ -70,21 +93,18 @@ button.onclick  {
     <p id = "print">
     </p>
 
+    <div id="uploading">
+      <input type="file" value="upload" id="submitButton" />
+    </div>
+    <script type="text/javascript" src="photos.js"></script>
+
+<p id = "img"></p>
+
+
+<img src="test" height="125px" width="200px"/>
+
   	</div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>

@@ -20,7 +20,7 @@ firebase.initializeApp(config);
 	 var email = document.getElementById('email').value;
 	 var password = document.getElementById('password').value;
 	 var password2 = document.getElementById('password_confirmation').value;
-   
+
 	 if (password != password2) {
 		 var errorMessage = 'Your passwords do not match!';
 		 document.getElementById('message-box').innerHTML = errorMessage;

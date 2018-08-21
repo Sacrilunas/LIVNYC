@@ -38,7 +38,7 @@ function authStatusListener() {
    if (user) {
      document.getElementById('log-in-form').innerHTML='';
      document.getElementById('message-box').innerHTML = "You're signed in!";
-     location.href = "livnyc.html";
+     location.href = "lifestyle.html";
    } else {
      // No user is signed in.
    }
