@@ -19,6 +19,7 @@ button {
   padding: 14px 16px;
   font-size: 17px;
   width: 15%;
+  margin-left: 100px;
 
 }
 
@@ -41,6 +42,9 @@ h1, h2, h3, h4, h5, h6, #email, #password {
 #email, #password {
 font-size: 16px;
 }
+#center {
+  margin-left: 100px;
+}
 
 
 </style>
@@ -51,16 +55,16 @@ font-size: 16px;
 <p>Enter your email and password to log in for Venting!</p>
 <div id="message-box"> </div>
 <div id="log-in-form">
-  <input style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email"/>
+  <input style="display:inline;width:200px;" type="text" id="email" name="email" placeholder="Email"/>
   &nbsp;&nbsp;&nbsp;
-  <input style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Password"/>
+  <input style="display:inline;width:200px;" type="password" id="password" name="password" placeholder="Password"/>
 
   <br/><br/>
 
   <button id="log-in" name="login" onclick="handleLogIn()">Log In</button>
   <br> </br>
   <br></br>
-      Dont have an account? <br></br><a href = "SignUpi.html"><button> Sign Up </button></a>
+    <div id = "center">  Dont have an account?  </div> <br></br><a href = "SignUpi.html"><button> Sign Up </button></a>
 </div>
 
 </body>

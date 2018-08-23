@@ -8,6 +8,7 @@ var config = {
   messagingSenderId: "388817267792"
 };
 
+
 // Initialize Firebase
 firebase.initializeApp(config);
 
@@ -17,7 +18,7 @@ firebase.initializeApp(config);
 	 firebase.auth().signOut().catch(function(error) {
 		 // An error happened
 		document.getElementById('message-box').innerHTML = error.message;
-    location.href = "NoLog.html";
+    location.href = "lifestyle.html";
 	});
 }
 
@@ -29,7 +30,7 @@ function authStatusListener() {
 		} else {
 			document.getElementById('message-box').innerHTML = "You're logged out.";
 			document.getElementById('log-out-form').innerHTML = '';
-      location.href = "NoLog.html";
+      //location.href = "livnyc.html";
 		}
 	});
 }
